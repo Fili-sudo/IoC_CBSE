@@ -1,11 +1,26 @@
-
-  [
-    {
-      "service": "IoC_CBSE.ISomeService",
-      "implementation": "IoC_CBSE.SomeServiceOne"
-    },
-    {
-      "service": "IoC_CBSE.IRandomGuidProvider",
-      "implementation": "IoC_CBSE.RandomGuidProvider"
-    }
-  ]
+[
+  {
+    "service": "IoC_CBSE.ISomeService",
+    "implementation": "IoC_CBSE.SomeServiceOne"
+  },
+  {
+    "service": "IoC_CBSE.IRandomGuidProvider",
+    "implementation": "IoC_CBSE.RandomGuidProvider"
+  },
+  {
+    "service": "IoC_CBSE.IAService",
+    "implementation": "IoC_CBSE.AService"
+  },
+  {
+    "service": "IoC_CBSE.IBService",
+    "implementation": "IoC_CBSE.BService"
+  },
+  {
+    "service": "IoC_CBSE.ICService",
+    "implementation": "IoC_CBSE.CService"
+  },
+  {
+    "service": "IoC_CBSE.IInnerCService",
+    "implementation": "IoC_CBSE.InnerCService"
+  }
+]

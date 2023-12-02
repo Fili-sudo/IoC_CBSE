@@ -35,18 +35,18 @@ namespace IoC_CBSE
 
             //services.RegisterTransient<ISomeService, SomeServiceOne>();
             //services.RegisterTransient<IRandomGuidProvider, RandomGuidProvider>();
-            services.RegisterSingleton<MainApp>();
 
 
             var container = services.GenerateContainer();
 
             var serviceFirst = container.GetService<ISomeService>();
             var serviceSecond = container.GetService<ISomeService>();
+            var aService = container.GetService<IAService>();
 
-            var mainApp = container.GetService<MainApp>();
 
             serviceFirst.PrintSomething();
             serviceSecond.PrintSomething();
+            aService.Print();
 
             //await mainApp.StartAsync();
         }
