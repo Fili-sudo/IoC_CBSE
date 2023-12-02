@@ -1,0 +1,11 @@
+
+  [
+    {
+      "service": "IoC_CBSE.ISomeService",
+      "implementation": "IoC_CBSE.SomeServiceOne"
+    },
+    {
+      "service": "IoC_CBSE.IRandomGuidProvider",
+      "implementation": "IoC_CBSE.RandomGuidProvider"
+    }
+  ]
