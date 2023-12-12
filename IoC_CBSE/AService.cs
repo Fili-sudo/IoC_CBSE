@@ -10,8 +10,8 @@ namespace IoC_CBSE
             _cService = cService;
         }
 
-        public IBService _bService { get; set; }
-        public ICService _cService { get; set; }
+        private readonly IBService _bService;
+        private readonly ICService _cService;
         public void Print()
         {
             Console.WriteLine("Hello from A Service");

@@ -9,7 +9,7 @@ namespace IoC_CBSE
             _innerCService = innerCService;
         }
 
-        public IInnerCService _innerCService { get; set; }
+        private readonly IInnerCService _innerCService;
         public void PrintFromCService()
         {
             Console.WriteLine("Hello from C Service");

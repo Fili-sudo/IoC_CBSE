@@ -28,27 +28,21 @@ namespace IoC_CBSE
 
             var services = new DiServiceCollection();
 
-            //services.RegisterSingleton<RandomGuidGenerator>();
-            //services.RegisterTransient<RandomGuidGenerator>();
-
             services.RegisterServices(serviceList);
-
-            //services.RegisterTransient<ISomeService, SomeServiceOne>();
-            //services.RegisterTransient<IRandomGuidProvider, RandomGuidProvider>();
-
-
             var container = services.GenerateContainer();
 
             var serviceFirst = container.GetService<ISomeService>();
             var serviceSecond = container.GetService<ISomeService>();
             var aService = container.GetService<IAService>();
+            var movieFinderService = container.GetService<IMovieFinder>();
 
 
             serviceFirst.PrintSomething();
             serviceSecond.PrintSomething();
             aService.Print();
+            var movie = movieFinderService.GetMovie("Star Wars");
+            Console.WriteLine(movie);
 
-            //await mainApp.StartAsync();
         }
     }
 }

@@ -22,5 +22,13 @@
   {
     "service": "IoC_CBSE.IInnerCService",
     "implementation": "IoC_CBSE.InnerCService"
+  },
+  {
+    "service": "IoC_CBSE.IMovieFinder",
+    "implementation": "IoC_CBSE.MovieFinder"
+  },
+  {
+    "service": "IoC_CBSE.IMovieLister",
+    "implementation": "IoC_CBSE.MovieLister"
   }
 ]
